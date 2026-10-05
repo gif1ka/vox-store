@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VØX — Same city, different mindset</title>
+<meta name="description" content="VØX Model 3 — City: hoodies, tees, cargo pants & shorts. Zaragoza, Spain.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Permanent+Marker&family=Unbounded:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="logo" href="#top" data-i18n-aria="nav.home">VØX</a>
+  <nav class="nav-r" aria-label="Menu">
+    <a class="navlink" href="#shop" data-i18n="nav.collection"></a>
+    <a class="navlink" href="#details" data-i18n="nav.details"></a>
+    <div class="lang" role="group" data-i18n-aria="nav.lang">
+      <button data-lang="ru" aria-pressed="false">RU</button>
+      <button data-lang="en" aria-pressed="false">EN</button>
+      <button data-lang="es" aria-pressed="false">ES</button>
+    </div>
+    <button class="cart-btn" id="cartBtn" data-i18n-aria="nav.cartAria"><span class="cl" data-i18n="nav.cart"></span><span class="n" id="cartN">0</span></button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="h1">
+    <div class="wordmark" aria-hidden="true">VØX</div>
+    <div class="hero-stage" id="stage">
+      <svg class="ring" viewBox="0 0 100 100" aria-hidden="true" fill="none" stroke="#ab8dff" stroke-width=".25">
+        <circle cx="50" cy="50" r="48" stroke-dasharray="1 2.2"/>
+        <ellipse cx="50" cy="50" rx="48" ry="17" transform="rotate(-24 50 50)"/>
+        <path d="M50 2 L56 44 L98 50 L56 56 L50 98 L44 56 L2 50 L44 44Z" stroke-width=".35"/>
+        <path d="M50 18 L53 47 L82 50 L53 53 L50 82 L47 53 L18 50 L47 47Z" transform="rotate(45 50 50)" stroke-width=".3"/>
+      </svg>
+      <div class="glow"></div>
+      <div class="arch" id="arch">
+        <img src="assets/img/hoodie_black_back.jpg" data-i18n-alt="hero.imgAlt" alt="" width="530" height="670" fetchpriority="high">
+        <div class="scan"></div>
+      </div>
+      <div class="coords" aria-label="Coordinates"><span id="lat">41.6488</span>° N<br><span id="lng">0.6488</span>° W</div>
+    </div>
+    <div class="hero-copy">
+      <h1 class="slogan" id="h1">Same city<br>different mindset</h1>
+      <p class="lead" data-i18n="hero.lead"></p>
+      <div class="cta-row">
+        <button class="btn" id="heroBuy"></button>
+        <a class="btn ghost" href="#shop" data-i18n="hero.all"></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div><b data-i18n="strip.1t"></b><span data-i18n="strip.1d"></span></div>
+    <div><b data-i18n="strip.2t"></b><span data-i18n="strip.2d"></span></div>
+    <div><b data-i18n="strip.3t"></b><span data-i18n="strip.3d"></span></div>
+  </div>
+
+  <section class="concept" aria-labelledby="concept-h">
+    <h2 id="concept-h"><span data-i18n="concept.w1"></span><span data-i18n="concept.w2"></span><span data-i18n="concept.w3"></span></h2>
+    <div>
+      <p data-i18n="concept.p"></p>
+      <div class="palette" role="group" data-i18n-aria="pal.aria">
+        <div class="sw"><i style="background:#0b0b0c"></i><span data-i18n="pal.black"></span></div>
+        <div class="sw"><i style="background:#4a4a4e"></i><span data-i18n="pal.graphite"></span></div>
+        <div class="sw"><i style="background:#8d8d92"></i><span data-i18n="pal.gray"></span></div>
+        <div class="sw"><i style="background:#f5f5f7"></i><span data-i18n="pal.white"></span></div>
+        <div class="sw"><i style="background:#7a4be0"></i><span data-i18n="pal.violet"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop" id="shop" aria-labelledby="shop-h">
+    <div class="shop-head">
+      <h2 id="shop-h" data-i18n="shop.title"></h2>
+      <div class="tabs" id="tabs" role="group" data-i18n-aria="shop.filter"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="details" id="details" aria-labelledby="det-h">
+    <h2 id="det-h" data-i18n="details.title"></h2>
+    <p data-i18n="details.p"></p>
+    <div class="dgrid">
+      <figure class="d wide"><img src="assets/img/detail_sleeve.jpg" data-i18n-alt="d.sleeve" alt="" loading="lazy"><figcaption data-i18n="d.sleeve"></figcaption></figure>
+      <figure class="d"><img src="assets/img/detail_back.jpg" data-i18n-alt="d.back" alt="" loading="lazy"><figcaption data-i18n="d.back"></figcaption></figure>
+      <figure class="d"><img src="assets/img/detail_laces.jpg" data-i18n-alt="d.laces" alt="" loading="lazy"><figcaption data-i18n="d.laces"></figcaption></figure>
+      <figure class="d"><img src="assets/img/detail_tag.jpg" data-i18n-alt="d.tag" alt="" loading="lazy"><figcaption data-i18n="d.tag"></figcaption></figure>
+      <figure class="d"><img src="assets/img/detail_star.jpg" data-i18n-alt="d.star" alt="" loading="lazy"><figcaption data-i18n="d.star"></figcaption></figure>
+      <figure class="d"><img src="assets/img/detail_crown.jpg" data-i18n-alt="d.crown" alt="" loading="lazy"><figcaption data-i18n="d.crown"></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="fin-h">
+    <h2 id="fin-h" data-i18n="final.title"></h2>
+    <p data-i18n="final.p"></p>
+    <div class="cta-row">
+      <a class="btn" href="#shop" data-i18n="final.cta"></a>
+      <a class="btn ghost" id="waAsk" href="#" target="_blank" rel="noopener" data-i18n="final.ask"></a>
+    </div>
+    <div class="paybox">
+      <h3 data-i18n="pay.title"></h3>
+      <div class="badges" id="payBadges"></div>
+      <p data-i18n="pay.note"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot-bar">
+  <strong class="flogo">VØX</strong>
+  <span>Zaragoza, Spain. 41.6488° N, 0.6488° W</span>
+  <span data-i18n="foot.copy"></span>
+</footer>
+
+<div class="fab" id="fab"><button id="fabBtn" data-i18n-aria="nav.cartAria"><span id="fabL"></span><span id="fabR"></span></button></div>
+
+<!-- product -->
+<dialog id="product" aria-labelledby="pv-name">
+  <button class="x" id="pvClose" data-i18n-aria="p.close">×</button>
+  <div class="pv">
+    <div class="viewer"><img id="pvImg" alt=""><div class="views" id="pvViews"></div></div>
+    <div class="pi">
+      <h3 id="pv-name"></h3>
+      <div class="sub" id="pvSub"></div>
+      <div class="pr" id="pvPrice"></div>
+      <p class="desc" id="pvDesc"></p>
+      <div class="lbl" data-i18n="p.size"></div>
+      <div class="sizes" id="pvSizes" role="group" data-i18n-aria="p.sizeAria"></div>
+      <p class="msg" id="pvMsg" role="alert"></p>
+      <button class="btn" id="pvAdd" data-i18n="p.add"></button>
+      <ul class="assure"><li data-i18n="p.a1"></li><li data-i18n="p.a2"></li></ul>
+    </div>
+  </div>
+</dialog>
+
+<!-- cart -->
+<dialog id="cart" aria-labelledby="cart-h" data-view="list">
+  <div class="ch"><h3 id="cart-h"></h3><button class="x" id="cartClose" data-i18n-aria="c.close">×</button></div>
+  <div class="cbody">
+    <div class="v-list" id="lines"></div>
+    <form class="v-form co" id="coForm">
+      <label><span data-i18n="f.name"></span><input name="name" required autocomplete="name" data-i18n-ph="f.namePh"></label>
+      <label><span data-i18n="f.phone"></span><input name="phone" required type="tel" autocomplete="tel" inputmode="tel" placeholder="+34 600 000 000"></label>
+      <label><span data-i18n="f.addr"></span><textarea name="addr" rows="3" required autocomplete="street-address" data-i18n-ph="f.addrPh"></textarea></label>
+      <fieldset class="payset">
+        <legend data-i18n="f.pay"></legend>
+        <div id="payOpts"></div>
+        <div class="badges small" id="payBadges2"></div>
+      </fieldset>
+      <small data-i18n="f.note"></small>
+    </form>
+    <div class="v-done done" id="done"></div>
+  </div>
+  <div class="cfoot" id="cfoot"></div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
